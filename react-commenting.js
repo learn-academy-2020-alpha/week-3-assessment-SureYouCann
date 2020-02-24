@@ -7,14 +7,14 @@
 class App extends Component{
   constructor(){
     super()
-    // 1.
+    // 1. creating a state object to store your data 
     this.state = {
       userInput: "",
     }
   }
 
   robot = (e) => {
-    // 2.
+    // 2. creating a method to update your user input 
     this.setState({ userInput: e.target.value})
   }
 
@@ -58,14 +58,14 @@ export default App
 class GoodRobot extends Component{
   render(){
     return(
-      // 8.
+      // 8. creating a div to wrap up data
       <div>
         <h3>Good Robot</h3>
-        {/* 9. */}
+        {/* 9. displaying the users text*/}
         <h4>I hear you saying { this.props.userInput }. Is that correct?</h4>
       </div>
     )
   }
 }
-// 10.
+// 10. ending the component
 export default GoodRobot
